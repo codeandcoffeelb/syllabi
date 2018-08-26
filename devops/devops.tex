@@ -1,0 +1,235 @@
+\documentclass[12pt]{article}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+\usepackage{hyperref}
+
+\title{Code and Coffee DevOps Syllabus}
+\author{Sal Llamas}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+Welcome to the Code and Coffee DevOps syllabus. This document is
+designed so for people with computer science backgrounds to map out
+their careers in DevOps.
+
+There are 6 sections to this document:
+\begin{enumerate}
+\item Prerequisites - What you should be able to do before getting
+  serious with DevOps
+\item Core Fundamentals - What you’d expect any professional DevOps
+  person to know
+\item Recommended - Skills that are good to have for DevOps
+  professionals, especially if you want to get into the big 3 (Amazon,
+  Facebook, and Google)
+\item Specialization - Branches of DevOps you can specialize in to be
+  more marketable
+\item Getting the Job - Tips to get that first DevOps job
+\item Career Advice - Tips for people after they start their careers
+  in DevOps
+\end{enumerate}
+
+There are a couple of disciplines to consider in this document:
+\begin{enumerate}
+\item Marketability is what we care about. We care about the
+  skills/tools that will help people to get a job, not necessarily the
+  “best” tools. For example: Mongo has a bit of a reputation. It
+  ranges from “it’s fine”, to “it was spawned from the deepest
+  trenches of hell”. We decided to put it over Couch or Cassandra for
+  the document database section even though they have arguably better
+  reputations because Mongo is in higher demand.
+\item The more important a skill/tool, the clearer it should be on the
+  syllabus. Bad example: saying “Learn Linux”. Learning Linux can mean
+  anything from playing around with the CLI or making changes to the
+  Linux kernel repro. Good example: saying “Read the UNIX and Linux
+  System Administration Handbook”. This is a very clear and tangible
+  goal that not only defines what you need to know but also how well
+  you need to know it.
+\item When there is more than way to do something, recommend the most
+  marketable one and offer the others as alternative.
+\item Technologies wax and wane so when deciding to include something
+  ask yourself “Will this still be marketable 1 year from now”. If the
+  answer is yes, include it.
+\item No nerd wars in this document please. The answer to vim vs emacs
+  is vim, emacs or nano.
+\end{enumerate}
+
+\newpage
+
+\section{DevOps Syllabus (2018)}
+
+\subsection{Prerequisites}
+\begin{itemize}
+\item Learn Python
+\item Know Unix CLI and Scripting well enough to make a deploy script
+  \begin{itemize}
+  \item Learn a CLI editor (vim, nano, emacs, etc)
+  \end{itemize}
+\item Know at least one flavor of SQL
+\item Create a high availability blog with a DB backend with
+  Create/Read/Update/Delete
+\item Know at least one source control (SVN/Git/Mercurial)
+\end{itemize}
+
+\subsection{Core Fundamentals}
+\begin{itemize}
+\item UNIX and Linux System Administration Handbook Nemeth, Snyder, Hein, Whaley, Mackin
+\item A relational database
+  \begin{itemize}
+  \item Learning PostgreSQL Juba, Vannahme, Volkov
+  \item Also try MySQL, PerconaDB, MariaDB, or MSSQL
+  \end{itemize}
+\item A document database
+  \begin{itemize}
+  \item MongoDB: The Definitive Guide: Powerful and Scalable Data
+    Storage Bradshaw, Chodorow
+  \item Also try CouchDB or Cassandra
+  \end{itemize}
+\item Redis in Action Carlson
+\item A web/server framework
+  \begin{itemize}
+  \item Spring in Action Walls
+  \item Also try Django/aiohttp or .NET
+  \end{itemize}
+\item Pro Git Chacon
+\item Jenkins: The Definitive Guide Smart
+\item A message broker like RabbitMQ
+\item SOA in Practice: The Art of Distributed System Design Josuttis
+\item Amazon Web Services in Action Wittig, Wittig
+  \begin{itemize}
+  \item Also try Azure or Google Cloud Services
+  \item Also learn at least one AWS automation SDK (ie Boto)
+  \end{itemize}
+\item Containerization and Orchestration
+  \begin{itemize}
+  \item Docker in Action Nickoloff
+  \item Kubernetes The Hard Way (Online)
+  \end{itemize}
+\item Configuration Management
+  \begin{itemize}
+  \item Ansible for DevOps Geerling 
+  \item Also try Puppet, Chef, or Salt Stack
+  \end{itemize}
+\item Elasticsearch in Action Gheorghe, Hinman,‎ Russo
+\item The Art of Software Security Assessment Dowd, McDonald, Schuh
+\item Reproducible Infrastructure ie Terraform or Cloudformation
+\item Monitoring Tools
+  \begin{itemize}
+  \item Pager Duty
+  \item External Monitoring ie: Datadog, Alert Site, Site24x7,
+    Metricly or New Relic
+  \item Internal Monitoring ie: Nagios or Zabbix
+  \end{itemize}
+\item Beyond the Twelve-Factor App Hoffman
+\end{itemize}
+
+\subsection{Recommended}
+\begin{itemize}
+\item Cracking the Coding Interview McDowell
+\item The Phoenix Project Kim,‎ Behr,‎ Spafford
+\item The Algorithm Design Manual Skiena
+\item Design Patterns Gamma, Helm, Johnson, Booch
+\item CCNA Routing and Switching Complete Study Guide Lammle
+\item nginx: A Practical Guide to High Performance Corona
+\item Learn Go
+\item Do a Linux From Scratch
+\item Site Reliability Engineering Beyer Jones Petoff Murphy
+\item Learn Regex
+\item Learn Powershell for Windows Administration
+\item Learn load testing software ie JMETER
+\item Learn NIX OS package manager
+\item Learn about Content Delivery Networks (CDNs)
+\item Learn the basics of Agile
+\item A ticketing system like JIRA or Trello
+\end{itemize}
+
+\subsection{Specialization}
+\begin{itemize}
+\item DevSecOps
+  \begin{itemize}
+  \item Read on ethical hacking
+  \item Read on CISSP
+  \item Know cryptography basics
+  \item Know secrets management
+  \end{itemize}
+\item Build/Release/CI
+  \begin{itemize}
+  \item Learn automated build tools ie Bazel or Buck
+  \item Know GIT flow
+  \item Know data migration
+  \end{itemize}
+\item NOC (Network Operations Center)
+  \begin{itemize}
+  \item Know your monitoring tools
+  \end{itemize}
+\item Data Engineering\
+  \begin{itemize}
+  \item Learn Apache Spark
+  \item Learn Stream Processing ie Beam
+  \item Learn file system IO (lsm trees)
+  \item Know SQL well
+  \item Know JVM tuning
+  \item Know DB internals (indexing methods, search methods, etc)
+  \end{itemize}
+\item Storage Engineer
+  \begin{itemize}
+  \item Know file system differences
+  \item Know distributed file systems
+  \item Know your file system IO
+  \item Know data encryption
+  \item Know sharding techniques
+  \item Know data restoration
+  \item Learn ZFS
+  \end{itemize}
+\item System Integration
+  \begin{itemize}
+  \item This specialty is that you have no specialty. Learn as many
+    different types of skills as you can
+  \end{itemize}
+\end{itemize}
+
+\subsection{Getting the Job}
+\begin{itemize}
+\item Research positions way in advance before applying (Position
+  requirements, interview questions)
+\item Research the specific company you are applying to
+\item Balance what's in demand vs what you like to do
+\item Find examples of resumes and research how to make a resume
+\item Set up a Linked in
+\item Set up a professional website
+\item Have an online Git and make sure to show off only your best work
+\item Make a professional business card
+\item Know the 6 month time limit
+\item Network
+\item Always be working on something
+\end{itemize}
+
+\subsection{Career Advice}
+\begin{itemize}
+\item Watch out for recruiters
+  \begin{itemize}
+  \item Watch out for 3rd party recruiters
+    \begin{itemize}
+    \item They sell data to third parties
+    \item They bait and switch
+    \item They take commission (18\%-30\%) which lowers your pay
+      negotiation
+    \end{itemize}
+  \item They are not programmers and do not know technical details
+  \item Watch out for foreign agencies
+  \item Make your salary requirements clear and firm
+  \end{itemize}
+\item Never stop researching. You should still have side projects
+  after getting in.
+\item Watch for IP agreements in your contract
+\item Get advice from more senior engineers
+\item Get contract jobs reviewed by a lawyer
+\item Go to hackerspaces
+\item Document issues with difficult coworkers
+\item Go to conferences: SCaLE, Reinvent, Layer 1, Defcon, Blackhat,
+  Hashiconf, Sparklecon, DevOps Summit, PyCon, Rustconf or other
+  language conventions.
+\end{itemize}
+
+\end{document}
