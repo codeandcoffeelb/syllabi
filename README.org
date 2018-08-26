@@ -1,20 +1,21 @@
-Welcome to the Code and Coffee DevOps syllabus. This document is
-designed so for people with computer science backgrounds to map out
-their careers in DevOps.
+Welcome to the Code and Coffee syllabi colleciton. This set of
+documents are designed for people with computer science backgrounds to
+map out their careers in different software development career paths.
 
-There are 6 sections to this document:
+In general there are 6 sections to these documents:
  - Prerequisites - What you should be able to do before getting
-   serious with DevOps
- - Core Fundamentals - What you'd expect any professional DevOps
-   person to know
- - Recommended - Skills that are good to have for DevOps
-   professionals, especially if you want to get into the big 3
-   (Amazon, Facebook, and Google)
- - Specialization - Branches of DevOps you can specialize in to be
-   more marketable
- - Getting the Job - Tips to get that first DevOps job
+   serious with the relevant career path
+ - Core Fundamentals - What you'd expect any professional in the
+   selected career to know
+ - Recommended - Skills that are good to have for the selected career,
+   especially if you want to get into the big 3 (Amazon, Facebook, and
+   Google)
+ - Specialization - Branches of the relevant career you can specialize
+   in to be more marketable
+ - Getting the Job - Tips to get that first /insert career choice
+   here/ job
  - Career Advice - Tips for people after they start their careers in
-   DevOps
+   the selected field
 
 There are a couple of disciplines to consider in this document:
  - Marketability is what we care about. We care about the skills/tools
@@ -36,5 +37,5 @@ There are a couple of disciplines to consider in this document:
  - Technologies wax and wane so when deciding to include something ask
    yourself "Will this still be marketable 1 year from now". If the
    answer is yes, include it.
- - No nerd wars in this document please. The answer to vim vs emacs is
-   vim, emacs or nano.
+ - No nerd wars in these documents please. The answer to vim vs emacs
+   is vim, emacs, or nano.
