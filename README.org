@@ -2,6 +2,10 @@ Welcome to the Code and Coffee syllabi colleciton. This set of
 documents are designed for people with computer science backgrounds to
 map out their careers in different software development career paths.
 
+If you have any recommendations, suggestions, or errors you want
+fixed, please create an issue in the issues tab of the GitHub
+repository page.
+
 In general there are 6 sections to these documents:
  - Prerequisites - What you should be able to do before getting
    serious with the relevant career path
