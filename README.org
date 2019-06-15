@@ -38,23 +38,24 @@ There are a couple of disciplines to consider in this document:
    tangible goal that not only defines what you need to know but also
    how well you need to know it.
  - When there is more than way to do something, recommend the most
-   marketable one and offer the others as alternative.
+   marketable one and offer the others as alternatives.
  - Technologies wax and wane so when deciding to include something ask
    yourself "Will this still be marketable 1 year from now". If the
    answer is yes, include it.
  - No nerd wars in these documents please. The answer to Vim vs Emacs
    is Vim, Emacs, or Nano.
 * LaTeX
-Useful LaTeX resources:
+Useful LaTeX resources to get started working on these and other LaTeX
+documents:
  - [[https://www.ctan.org/starter][CTAN: Starting out with TeX, LaTeX, and friends]]; Good general
    starting point
    - [[http://mirrors.rit.edu/CTAN/info/lshort/english/lshort.pdf][The Not So Short Introduction to LaTeX 2e]] (PDF)
    - [[https://www.ctan.org/texarchive/info/lshort/english][CTAN: The Not So Short Introduction to LaTeX 2e]] (Repository)
  - [[https://www.tug.org/texlive/][TeX Live - TeX Users Group]]; Tex+LaTeX+Extras distro; Windows,
    macOS, Linux
-   - Easy got get on Linux and macOS
+   - Easy to get on Linux and macOS via package managers
  - [[https://www.tug.org/texworks/][TeXworks]]; GUI and TeX+LaTeX+Extras distro; Windows, macOS, Linux
    - Easier to setup on Windows than other options
-   - Included an IDE
+   - Includes an IDE
  - [[https://www.lyx.org/][LyX]]; GUI, no TeX distro; Windows, macOS, Linux
    - Good multi-platform TeX and LaTeX IDE
