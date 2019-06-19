@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  spellcheck:
+    docker:
+      - image: ryanbw/spellcheck:hunspell-latest
+    steps:
+      - checkout
+      - run:
+          name: Spellcheck
+          command: |
+            spellcheck_results="$(hunspell -d en_US -p local-dictionary -u3 ./**/*.tex)"
+            echo "Spellcheck results:"
+            echo "$spellcheck_results"
+            [ "$spellcheck_results" = "" ]
