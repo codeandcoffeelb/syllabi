@@ -12,13 +12,10 @@ In general there are 6 sections to these documents:
    serious with the relevant career path
  - Core Fundamentals - What you'd expect any professional in the
    selected career to know
- - Recommended - Skills that are good to have for the selected career,
-   especially if you want to get into the big 3 (Amazon, Facebook, and
-   Google)
- - Specialization - Branches of the relevant career you can specialize
-   in to be more marketable
- - Getting the Job - Tips to get that first /insert career choice
-   here/ job
+ - Highly Recommended - Skills that are good to have for the selected
+   career, especially if you want to get into the big 3 (Amazon,
+   Facebook, and Google)
+ - Good to Know - Additional recommended skills to further your career
  - Career Advice - Tips for people after they start their careers in
    the selected field
 * Project Focus
