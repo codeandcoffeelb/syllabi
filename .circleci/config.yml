@@ -2,15 +2,19 @@ version: 2
 jobs:
   spellcheck:
     docker:
-      - image: ryanbw/spellcheck:hunspell-latest
+      - image: ryanbw/spellcheck:aspell-latest
     steps:
       - checkout
       - run:
           name: Spellcheck
           command: |
-            spellcheck_results="$(hunspell -d en_US -p local-dictionary -u3 ./**/*.tex)"
+            shopt -s nullglob
             echo "Spellcheck results:"
-            echo "$spellcheck_results"
+            for file in {,**/}*.{tex,org}; do
+              spellcheck_result="$(aspell -d en_US -p ./local-dictionary -t list < $file | uniq | sed s_^_${file}:\ _)"
+              spellcheck_results="$spellcheck_results$spellcheck_result"
+              echo "$spellcheck_result"
+            done
             [ "$spellcheck_results" = "" ]
 workflows:
   version: 2
