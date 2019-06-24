@@ -2,4 +2,8 @@
 *.log
 *.pdf
 *.out
+*-blx.bib
+*.bbl
+*.blg
+*.run.xml
 *~

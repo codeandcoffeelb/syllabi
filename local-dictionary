@@ -1,6 +1,7 @@
 personal_ws-1.1 en 72
 aiohttp
 Ansible
+AWS
 backend
 Bazel
 Boto
@@ -12,10 +13,12 @@ CLI
 CLIs
 CloudFormation
 CouchDB
+CSS
 Datadog
 DevOps
 DevSecOps
 distro
+Django
 DOM
 Elasticsearch
 frontend
@@ -31,8 +34,10 @@ Kubernetes
 LaTeX
 Logstash
 macOS
+MariaDB
 Metricly
 Mongo
+MySQL
 Nagios
 Nano
 nginx
