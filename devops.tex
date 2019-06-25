@@ -2,6 +2,10 @@
 \usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
 \usepackage{hyperref}
 \usepackage{ifpdf}
+\usepackage{csquotes}
+\usepackage[american]{babel}
+\usepackage[backend=bibtex,bibstyle=alphabetic,citestyle=reading,autocite=plain]{biblatex}
+\addbibresource{bibliography.bib}
 
 \title{Code and Coffee DevOps Syllabus}
 \author{Code and Coffee}
@@ -25,45 +29,45 @@
 
 \section{Core Fundamentals}
 \begin{itemize}
-\item \textbf{UNIX and Linux System Administration Handbook} Nemeth, Snyder, Hein, Whaley, Mackin
+\item \autocite{nemeth2017unix}
 \item A relational database
   \begin{itemize}
-  \item \textbf{Learning PostgreSQL} Juba, Vannahme, Volkov
+  \item \autocite{juba2015learning}
   \item Also try MySQL, Percona Server, MariaDB, or MS SQL Server
   \end{itemize}
 \item A document database
   \begin{itemize}
-  \item \textbf{MongoDB: The Definitive Guide: Powerful and Scalable Data Storage} Bradshaw, Chodorow
+  \item \autocite{chodorow2010mongodb}
   \item Also try CouchDB or Cassandra
   \end{itemize}
-\item \textbf{Redis in Action} Carlson
+\item \autocite{carlson2013redis}
 \item A web/server framework
   \begin{itemize}
-  \item \textbf{Spring in Action} Walls
+  \item \autocite{walls2018spring}
   \item Also try Django/aiohttp or .NET
   \end{itemize}
-\item \textbf{Pro Git} Chacon
-\item \textbf{Jenkins: The Definitive Guide} Smart
+\item \autocite{chacon2014git}
+\item \autocite{smart2011jenkins}
 \item A message broker like RabbitMQ
-\item \textbf{SOA in Practice: The Art of Distributed System Design} Josuttis
-\item \textbf{Amazon Web Services in Action} Wittig, Wittig
+\item \autocite{josuttis2007soa}
+\item \autocite{wittig2018aws}
   \begin{itemize}
   \item Also try Azure or Google Cloud Services
   \item Also learn at least one AWS automation SDK (IE Boto)
   \end{itemize}
-\item \textbf{Docker in Action} Nickoloff
-\item \textbf{Kubernetes: Up and Running: Dive into the Future of Infrastructure}  Hightower, Burns, Beda
+\item \autocite{nickoloff2016docker}
+\item \autocite{burns2017kubernetes}
   \begin{itemize}
-  \item Also try \textbf{Kubernetes The Hard Way} (Online)
+  \item Also try \autocite{hightowerkubernetes}
   \end{itemize}
 \item Configuration Management
   \begin{itemize}
-  \item \textbf{Ansible for DevOps} Geerling 
+  \item \autocite{geerling2015ansible}
   \item Also try Puppet, Chef, or Salt Stack
   \end{itemize}
 \item Learn how to use and deploy an ELK stack (Elasticsearch, Logstash, Kibana)
-\item \textbf{The Art of Software Security Assessment} Dowd, McDonald, Schuh
-\item \textbf{Terraform: Up and Running: Writing Infrastructure as Code}  Brikman
+\item \autocite{schuh2006softwaresecurity}
+\item \autocite{brikman2017terraform}
   \begin{itemize}
   \item Also try CloudFormation
   \end{itemize}
@@ -73,20 +77,20 @@
   \item External Monitoring IE: Datadog, Alert Site, Site24x7, Metricly or New Relic
   \item Internal Monitoring IE: Nagios or Zabbix
   \end{itemize}
-\item \textbf{Beyond the Twelve-Factor App} Hoffman
+\item \autocite{hoffman2016twelvefactor}
 \end{itemize}
 
 \section{Recommended}
 \begin{itemize}
-\item \textbf{Cracking the Coding Interview} McDowell
-\item \textbf{The Phoenix Project} Kim, Behr, Spafford
-\item \textbf{The Algorithm Design Manual} Skiena
-\item \textbf{Design Patterns} Gamma, Helm, Johnson, Booch
-\item \textbf{CCNA Routing and Switching Complete Study Guide} Lammle
+\item \autocite{mcdowell2015interview}
+\item \autocite{spafford2013phoenix}
+\item \autocite{skiena2008algorithm}
+\item \autocite{gamma1994patterns}
+\item \autocite{lammle2016ccna}
 \item Learn NGINX
 \item Learn Go
-\item Do a Linux From Scratch
-\item \textbf{Site Reliability Engineering} Beyer Jones Petoff Murphy
+\item Do a Linux From Scratch \autocite{beekmanslfs}
+\item \autocite{beyer2016sre}
 \item Learn Regex
 \item Learn PowerShell for Windows Administration
 \item Learn load testing software IE JMeter
@@ -168,5 +172,7 @@
 \item Document issues with difficult coworkers
 \item Go to conferences: SCaLE, Reinvent, Layer 1, DEF CON, Black Hat, HashiConf, SparkleCon, DevOps Summit, PyCon, RustConf or other language conventions.
 \end{itemize}
+
+\printbibliography
 
 \end{document}

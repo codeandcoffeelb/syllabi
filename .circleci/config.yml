@@ -11,7 +11,7 @@ jobs:
             shopt -s nullglob
             echo "Spellcheck results:"
             for file in {,**/}*.{tex,org}; do
-              spellcheck_result="$(aspell -d en_US -p ./local-dictionary -t list < $file | uniq | sed s_^_${file}:\ _)"
+              spellcheck_result="$(aspell -d en_US -p ./local-dictionary -t --add-tex-command 'autocite OOp' list < $file | uniq | sed s_^_${file}:\ _)"
               spellcheck_results="$spellcheck_results$spellcheck_result"
               echo "$spellcheck_result"
             done
