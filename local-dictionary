@@ -21,6 +21,7 @@ distro
 Django
 DOM
 Elasticsearch
+fullstack
 frontend
 GraphQL
 hackerspace
@@ -28,6 +29,7 @@ hackerspaces
 HashiConf
 Jira
 JMeter
+JNI
 JS
 Kibana
 Kubernetes
@@ -44,6 +46,7 @@ nginx
 NOC
 NPM
 Percona
+platformer
 PowerShell
 PyCon
 RabbitMQ
@@ -64,6 +67,7 @@ syllabi
 Terraform
 Trello
 UI
+USC
 UX
 Vue
 WAF
